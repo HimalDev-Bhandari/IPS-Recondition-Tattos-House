@@ -426,4 +426,232 @@ header {
     align-items: center;
     justify-content: center;
 }
+/* Booking Section */
+.booking {
+    background: var(--light);
+}
+
+.booking-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.booking-form, .booking-info {
+    background: white;
+    padding: 3rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.booking-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    border: 2px solid #ddd;
+    border-radius: var(--radius);
+    outline: none;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.2);
+}
+
+.booking-info h3 {
+    margin-bottom: 2rem;
+}
+
+.info-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.info-list li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.info-list i {
+    color: var(--success);
+    font-size: 1.3rem;
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-details, .hours-list {
+    list-style: none;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item i {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Mission Section */
+.mission {
+    background: var(--light);
+}
+
+.mission-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.mission-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.mission-card h3 {
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer Section */
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 4rem 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.footer-logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.footer-about p {
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer-links ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-links ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-links ul li a:hover {
+    color: var(--accent);
+}
+
+.footer-contact ul {
+    list-style: none;
+}
+
+.footer-contact ul li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-contact i {
+    color: var(--accent);
+    font-size: 1.3rem;
+}
+
+.footer-newsletter p {
+    color: #ccc;
+}
+
+footer .form-control {
+    border-radius: 50px;
+}
+
+footer .btn {
+    margin-top: 1rem;
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+footer .btn:hover {
+    background: transparent;
+    color: var(--accent);
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: white;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--accent);
+}
+
+copyright {
+    text-align: center;
+    margin-top: 3rem;
+    color: #bbb;
+    font-size: 0.9rem;
+}
 
