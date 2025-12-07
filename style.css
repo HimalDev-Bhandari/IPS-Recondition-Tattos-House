@@ -654,4 +654,73 @@ copyright {
     color: #bbb;
     font-size: 0.9rem;
 }
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.3s;
+}
+
+.delay-2 {
+    animation-delay: 0.6s;
+}
+
+.delay-3 {
+    animation-delay: 0.9s;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        width: 250px;
+        background: white;
+        padding: 2rem;
+        box-shadow: var(--shadow);
+        display: none;
+        border-radius: var(--radius);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.8rem;
+    }
+    
+    .services-grid,
+    .features-grid,
+    .gallery-grid,
+    .testimonial-grid,
+    .booking-grid,
+    .contact-grid,
+    .mission-content,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+}
 
